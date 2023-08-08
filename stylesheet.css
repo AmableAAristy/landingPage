@@ -11,7 +11,6 @@ body, html {
 .headers > h1{
     font-size: 24px;
     color: #f9faf8;
-    /* border: 2px solid blue; */
     margin-right: auto;
 }
 .headers > h2{
@@ -23,11 +22,10 @@ body, html {
 .text{
     background-color: #1f2937;
     display: flex;
-
-
 }
 .text > .colContainer{
     flex-flow: column wrap;
+    margin: 100px;
 
    
 }
@@ -36,22 +34,25 @@ body, html {
     font-weight: bolder;
     color: #f9faf8;
 
-    /* border: 2px solid green; */
+
     
 
 }
 .colContainer > .smaller{
     font-size: 24px;
     color: #f9faf8;
-    /* border: 2px solid blue; */
+
     margin-right: auto;
-    /* flex: 1; */
+
 }
 .colContainer > button{
     background-color: #3882f6;
     height: 50px;
     width: 100px;
     border-radius: 10px;
+    margin-left: 40%;
+    border-radius: 10px;
+    border-color: whitesmoke;
 }
 .text > .rowContainer{
     display: flex;
@@ -61,6 +62,7 @@ body, html {
 .rowContainer > img {
     height: 300px;
     width: 300px;
+    margin-top: 250px;
     margin-right: 200px;
 }
 
@@ -78,14 +80,17 @@ body, html {
 .square{
     width: 200px;
     height: 200px;
-    background-color: teal;
+    border: 1px solid red;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .container > p{
     color: black;
@@ -97,9 +102,21 @@ body, html {
     font-size: 36px;
     color: #1f2937;
     display: flex;
+
+    flex-wrap: nowrap;
 }
 .quote >div{
-    align-self: flex-end;
+
+    align-self:flex-end;
     font-size: 24px;
-    flex-wrap: nowrap
+    text-align: center;
+    margin-right: 10%;
+
+}
+img{
+    align-self: flex-start;
+
+    width: 200px;
+    height: 200px;
+
 }
